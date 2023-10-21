@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  rls:
+    image: "rls:0.1.0"
+    build: "."
+    restart: "always"
+    hostname: "rls"
+    # volumes:
+    # environment:
+    # command:
+    ports:
+      - "127.0.0.1:8080:8080"
+
+# networks
+
+# volumes
